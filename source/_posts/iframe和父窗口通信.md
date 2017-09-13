@@ -54,10 +54,10 @@ message 的属性有:
 对发送消息的窗口对象的引用; 您可以使用此来在具有不同origin的两个窗口之间建立双向通信。
 
 ### 实际使用经验
-* post高度的时候，一般使用document.body.clientHeight获取iframe内的内容的高度
+* post高度的时候，一般使用document.body.clientHeight获取iframe内的内容的高度
 * 为了快速设置高度，可以在未加载完成的时候，就先post一个高度，等页面onload的时候在post一次高度
 * 注意在页面高度变化的时候需要重新设置高度，页面高度变化一般都是由于发生点击重绘页面，因此点击的时候需要post高度，有时会异步请求一些资源，如果不能在callback中设置高度，可以通过设置定时器不断post高度来解决
 * postMessage不仅仅是用来设置高度，可以处理任何消息，不要思维定视
 
-### 参考资料
+### 参考资料
 [MDN web docs](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage)

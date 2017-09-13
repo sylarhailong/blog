@@ -4,7 +4,7 @@ date: 2017-09-03 20:28:07
 categories: nginx
 tags: nginx全局变量
 ---
-经常修改nginx配置，修改过之后，下次可能还需要重新查资料，现在总结一下，方便自己以后查看。先总结下nginx的全局变量。
+经常修改nginx配置，修改过之后，下次可能还需要重新查资料，现在总结一下，方便自己以后查看。先总结下nginx的全局变量。
 ### nginx的全局变量参数解释
 * $arg_PARAMETER      #这个变量包含GET请求中，如果有变量PARAMETER时的值。
 * $args               #这个变量等于请求行中(GET请求)的参数，例如from=123&test=1;
